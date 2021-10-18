@@ -17,10 +17,12 @@ Features
  - Events
  - Full admin command set
  - Lightly started squad tracking
+ - Announcing automatic restarts
 
 ## Getting started
 
 You will need node 16.x and a MySQL instance set up.
+Restore `dump.sql` for table schema
 The admin locked commands require a Discord role named "Admin" to use.
 
 Install node packages.
@@ -60,6 +62,16 @@ WantedBy=multi-user.target
 - `cd` into the directory
 - `git pull origin` to grab the latest code
 - `service scumbot restart` restart the service to pickup new code changes
+
+## Automatic Restart Reminders
+
+If you'd like the bot to warn players 15 minutes before automatc restarts you will need to create a schedule in MySQL - https://www.mysqltutorial.org/mysql-triggers/working-mysql-scheduled-event/
+
+We've kept examples of how to create an event in the database dump. Adjust them as needed.
+
+Create events that occur x minutes before each scheduled restart time with the below action. The game bot will pick these up and execute the `#Announce` command.
+
+`INSERT INTO announcements (content) VALUES ('The server will restart at 6PM AEST (about 15 minutes)')`
 
 ## Supported Commands
 
