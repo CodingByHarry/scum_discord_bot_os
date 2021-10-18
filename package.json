@@ -1,0 +1,19 @@
+{
+  "name": "scum_discord_bot",
+  "version": "0.0.1",
+  "description": "Discord bot for Scumtopia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}

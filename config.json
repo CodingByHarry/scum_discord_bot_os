@@ -1,0 +1,14 @@
+{
+  "debug": true,
+  "commandPrefix": "!",
+  "guildId": "######",
+  "botToken": "#####",
+  "botAuditChannel": "discord-bot-log",
+  "killFeedsChannel": "channel_id",
+  "chatFeedsChannel": "channel_id",
+  "raffleChannel": "channel_id",
+  "databaseHost": "127.0.0.1",
+  "databaseUsername": "username",
+  "databasePassword": "password",
+  "databaseName": "scumbot_development"
+}
